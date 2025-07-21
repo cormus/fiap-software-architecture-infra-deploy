@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nodejs-app
-        image: 881307377501.dkr.ecr.us-east-2.amazonaws.com/cormus:latest
+        image: 881307377501.dkr.ecr.us-east-2.amazonaws.com/cormus:52e7e3c600fb2861e802f860fb48151d1db04fc9
         ports:
         - containerPort: 4000
         resources:
