@@ -38,3 +38,4 @@ jobs:
         kubectl apply -f k8s/mysql-configmap.yaml
         kubectl apply -f k8s/mysql-secret.yaml
         kubectl apply -f k8s/node-deployment.yaml
+        kubectl apply -f k8s/spring-pagamento-deployment.yaml
