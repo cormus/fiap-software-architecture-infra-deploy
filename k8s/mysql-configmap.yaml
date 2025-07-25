@@ -3,5 +3,4 @@ kind: ConfigMap
 metadata:
   name: mysql-configmap
 data:
-  DATABASE_URL: "my-mysql-db.cj6euai841aq.us-east-2.rds.amazonaws.com"
-  DATABASE_NAME: pedido_db
+  DATABASE_URL: "jdbc:mysql://my-mysql-db.cj6euai841aq.us-east-2.rds.amazonaws.com:3306/pedido_db"
