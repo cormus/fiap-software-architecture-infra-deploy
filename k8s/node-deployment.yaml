@@ -21,6 +21,27 @@ spec:
           requests:
             cpu: "500m"
             memory: "256Mi"
+        env:
+        - name: AWS_REGION
+          valueFrom:
+            configMapKeyRef:
+              name: aws-config
+              key: AWS_REGION
+        - name: AWS_ENDPOINT
+          valueFrom:
+            configMapKeyRef:
+              name: aws-config
+              key: AWS_ENDPOINT
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: AWS_ACCESS_KEY_ID
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: AWS_SECRET_ACCESS_KEY
 ---
 apiVersion: v1
 kind: Service

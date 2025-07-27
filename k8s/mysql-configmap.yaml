@@ -4,3 +4,5 @@ metadata:
   name: mysql-configmap
 data:
   DATABASE_URL: "jdbc:mysql://my-mysql-db.cj6euai841aq.us-east-2.rds.amazonaws.com:3306/pedido_db"
+  AWS_REGION: us-east-2
+  AWS_ENDPOINT: http://dynamodb.us-east-2.amazonaws.com
